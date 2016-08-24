@@ -48,6 +48,11 @@ datacube product add $AGDC_CONFIG/product/ls5_scenes.yaml
 datacube product add $AGDC_CONFIG/product/ls7_scenes.yaml
 datacube product add $AGDC_CONFIG/product/ls8_scenes.yaml
 
+# 3.5. Create metadata doc for data
+./agdc-v2/utils/usgslsprepare.py /projectnb/landsat/users/ceholden/2016_DATACUBE/AGDC/TEST_DATA/LC80120312016115-SC20160707131945
+
 # 3.6. Index some data
 datacube dataset add --auto-match /projectnb/landsat/users/ceholden/2016_DATACUBE/AGDC/TEST_DATA/LC80120312016115-SC20160707131945
 
+# 3.7. Run index
+datacube ingest --executor distributed 192.12.187.132:8786 -c config/ingest/ls8_ledaps_albers.yaml
