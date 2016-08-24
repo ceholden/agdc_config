@@ -2,7 +2,7 @@
 
 set -e
 
-SCRIPT=/projectnb/landsat/users/ceholden/2016_DATACUBE/AGDC/1_unzip_and_index.sh
+SCRIPT=/projectnb/landsat/users/ceholden/2016_DATACUBE/AGDC/utils/1_ESPA_unzip_and_index.sh
 
 MAX=$1
 ARCHIVES=${@:2}
