@@ -1,28 +1,29 @@
 name: agdc
+channels:
+    - conda-forge
 dependencies:
-- click=6.6=py35_0
-- dask=0.10.1=py35_1
-- gdal=1.11.4=np111py35_10
-- matplotlib=1.5.2=np111py35_4
-- netcdf4=1.2.4=np111py35_2
-- numexpr=2.6.0=np111py35_0
-- numpy=1.11.1=py35_blas_openblas_200
-- postgresql=9.5.3=py35_0
-- psycopg2=2.6.2
-- python=3.5.2=1
-- python-dateutil=2.5.3=py35_0
-- pyyaml=3.11=py35_4
-- rasterio=0.35.1=np111py35_1
-- scipy=0.17.1=np111py35_blas_openblas_201
-- setuptools=23.0.0=py35_0
-- toolz=0.8.0=py35_0
-- xarray=0.7.2=py35_0
-- pip:
-  - cachetools==1.1.6
-  - future==0.15.2
-  - jsonschema==2.5.1
-  - pathlib==1.0.1
-  - pypeg2==2.15.2
-  - singledispatch==3.4.0.3
-  - sqlalchemy==1.0.14
-
+    - python=3
+    - click>=6
+    - setuptools>=23.0.0
+    - matplotlib>=1.5.2
+    - numexpr>=2.6.0
+    - numpy>=1.11.1
+    - scipy>=0.17.1
+    - postgresql
+    - psycopg2>=2.6.2
+    - python-dateutil
+    - pyyaml>=3.11
+    - gdal
+    - rasterio>=0.35.1
+    - netcdf4>=1.2.4
+    - xarray>=0.7.2
+    - dask>=0.10.1
+    - toolz>=0.8.0
+    - pip:
+        - cachetools
+        - future>=0.15
+        - jsonschema
+        - pathlib
+        - pypeg2
+        - singledispatch
+        - sqlalchemy
