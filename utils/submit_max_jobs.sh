@@ -4,6 +4,11 @@ set -e
 
 SCRIPT=/projectnb/landsat/users/ceholden/2016_DATACUBE/AGDC/utils/1_ESPA_unzip_and_index.sh
 
+if [ -z $2 ]; then
+    echo "Error: must specify <number of jobs> and <archive...>"
+    exit 1
+fi
+
 MAX=$1
 ARCHIVES=${@:2}
 
