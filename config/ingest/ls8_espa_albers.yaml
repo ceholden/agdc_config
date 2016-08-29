@@ -1,24 +1,24 @@
-source_type: ls8_ledaps_scene
-output_type: ls8_ledaps_albers
+source_type: ls8_espa_scene
+output_type: ls8_espa_albers
 
 description: Landsat 8 ESPA products, 5000x5000 pixel 30m tiles in Conus Albers (EPSG:5070)
 
 location: '/projectnb/landsat/datasets/AGDC/TILES/'
-file_path_template: 'LS8_OLI_LEDAPS/{tile_index[0]}/{tile_index[1]}/LS8_OLI_LEDAPS_5070_{tile_index[0]}_{tile_index[1]}_{start_time}.nc'
+file_path_template: 'LS8_OLI_ESPA/{tile_index[0]}/{tile_index[1]}/LS8_OLI_LEDAPS_5070_{tile_index[0]}_{tile_index[1]}_{start_time}.nc'
 global_attributes:
   title: Boston University Data Cube Landsat Surface Reflectance
   summary: Landsat 8 Operational Land Imager Analysis Ready data prepared by USGS
-  source: Surface reflectance from LEDAPS
-  institution: Boston University 
+  source: Surface reflectance from LaSRC
+  institution: Boston University
   instrument: TM
   cdm_data_type: Grid
-  keywords: AU/GA,NASA/GSFC/SED/ESD/LANDSAT,REFLECTANCE,ETM+,TM,OLI,EARTH SCIENCE
+  keywords: AU/GA,NASA/GSFC/SED/ESD/LANDSAT,REFLECTANCE,CDR,OLI,EARTH SCIENCE
   keywords_vocabulary: GCMD
-  platform: LANDSAT-5
+  platform: LANDSAT-8
   processing_level: L2
   product_version: '2.0.0'
   product_suite: USGS Landsat
-  project: BU 
+  project: BU
   coverage_content_type: physicalMeasurement
   references: http://dx.doi.org/10.3334/ORNLDAAC/1146
   license: https://creativecommons.org/licenses/by/4.0/
@@ -29,7 +29,7 @@ ingestion_bounds: # Specified in Storage CRS coordinates. Will expand to tile bo
   left: -2565600.0
   bottom: 14650.0
   right: 2384520.0
-  top: 3314800.0 
+  top: 3314800.0
 
 storage:
   driver: NetCDF CF
