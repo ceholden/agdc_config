@@ -7,5 +7,5 @@ install all of the dependencies of the AGDC. To use it, first install
 new `conda` environment using this `environment.yaml` as follows:
 
 ``` bash
-conda create -c conda-forge -f environment.yaml
+conda env create -f environment.yaml
 ```
