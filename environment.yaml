@@ -15,6 +15,7 @@ dependencies:
     - pyyaml>=3.11
     - gdal
     - rasterio>=0.35.1
+    - fiona
     - shapely
     - netcdf4>=1.2.4
     - xarray>=0.7.2
