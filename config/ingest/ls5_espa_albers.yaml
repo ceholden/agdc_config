@@ -31,9 +31,9 @@ global_attributes:
 # Tiles: 32 horizontal 21 vertical
 ingestion_bounds: # Specified in Storage CRS coordinates. Will expand to tile boundaries.
   left: -2565600.0
-  bottom: 14650.0
+  bottom: 164800.0
   right: 2234400.0
-  top: 164800.0
+  top: 3314800.0
 
 storage:
   driver: NetCDF CF
