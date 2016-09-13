@@ -37,18 +37,21 @@ ingestion_bounds: # Specified in Storage CRS coordinates. Will expand to tile bo
 
 storage:
   driver: NetCDF CF
-
   crs: EPSG:5070
+  origin:
+    x: -2565600.0
+    y: 3314800.0
+  convention: 'upperleft'
   tile_size:
-          x: 150000.0
-          y: 150000.0
+    x: 150000.0
+    y: 150000.0
   resolution:
-          x: 30
-          y: -30
+    x: 30
+    y: -30
   chunking:
-      x: 200
-      y: 200
-      time: 1
+    x: 200
+    y: 200
+    time: 1
   dimension_order: ['time', 'y', 'x']
 
 measurements:
