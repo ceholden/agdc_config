@@ -4,7 +4,7 @@ output_type: ls5_espa_albers
 description: Landsat 5 ESPA products, 5000x5000 pixel 30m tiles in Conus Albers (EPSG:5070)
 
 location: '/projectnb/landsat/datasets/AGDC/TILES/'
-file_path_template: 'LS5_TM_ESPA/{tile_index[0]}/{tile_index[1]}/LS5_TM_ESPA_5070_{tile_index[0]}_{tile_index[1]}_{start_time}.nc'
+file_path_template: 'LS5_TM_ESPA/h{tile_index[0]:02d}/v{tile_index[1]:02d}/LS5_TM_ESPA_5070_{tile_index[0]}_{tile_index[1]}_{start_time}.nc'
 global_attributes:
   title: Boston University CONUS Data Cube Landsat Surface Reflectance
   summary: Landsat 5 Thematic Mapper Analysis Ready data prepared by USGS
