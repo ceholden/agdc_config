@@ -4,7 +4,7 @@ output_type: ls8_espa_albers
 description: Landsat 8 ESPA products, 5000x5000 pixel 30m tiles in Conus Albers (EPSG:5070)
 
 location: '/projectnb/landsat/datasets/AGDC/TILES/'
-file_path_template: 'LS8_OLI_ESPA/h{tile_index[0]:02d}/v{tile_index[1]:02d}/LS8_OLI_LEDAPS_5070_{tile_index[0]}_{tile_index[1]}_{start_time}.nc'
+file_path_template: 'LS8_OLI_ESPA/h{tile_index[0]:02d}/v{tile_index[1]:02d}/LS8_OLI_LEDAPS_5070_h{tile_index[0]:02d}_v{tile_index[1]:02d}_{start_time}.nc'
 global_attributes:
   title: Boston University Data Cube Landsat Surface Reflectance
   summary: Landsat 8 Operational Land Imager Analysis Ready data prepared by USGS
@@ -41,10 +41,9 @@ storage:
   origin:
     x: -2565600.0
     y: 3314800.0
-  convention: 'upperleft'
   tile_size:
     x: 150000.0
-    y: 150000.0
+    y: -150000.0
   resolution:
     x: 30
     y: -30
