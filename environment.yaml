@@ -1,31 +1,47 @@
-name: agdc
+name: agdc-v2
 channels:
     - conda-forge
 dependencies:
     - python=3
-    - click>=6
-    - setuptools>=23.0.0
-    - matplotlib>=1.5.2
-    - numexpr>=2.6.0
-    - numpy>=1.11.1
-    - scipy>=0.17.1
+    - setuptools
+    - click>=5
+    - pathlib
+    - pyyaml
+    - sqlalchemy
+    - python-dateutil
+    - jsonschema
+    - cachetools
+    - singledispatch
     - postgresql
     - psycopg2>=2.6.2
-    - python-dateutil
-    - pyyaml>=3.11
+    - bottleneck
+# NUMERIC
+    - numpy
+    - rasterio>=1.0a5
     - gdal
-    - rasterio>=0.35.1
+    - netcdf4
+    - xarray
+    - dask
+# DISTRIBUTED
+    - distributed
+# INTERACTIVE
+    - matplotlib>=1.5
     - fiona
+# ANALYTICS
+    - numexpr>=2.6
+    - scipy>=0.17
+    - pyparsing
+# PREP SCRIPTS
     - shapely
-    - netcdf4>=1.2.4
-    - xarray>=0.7.2
-    - dask>=0.10.1
-    - toolz>=0.8.0
+# EXTRA - INTERACTIVE
+    - bokeh
+    - holoviews>=1.6.2
+    - cartopy
+    - jupyter
+    - notebook
+    - ipython
+    - jupyter_console
     - pip:
-        - cachetools
         - future>=0.15
-        - jsonschema
-        - pathlib
         - pypeg2
-        - singledispatch
-        - sqlalchemy
+        - git+git://github.com/data-cube/agdc-v2.git@datacube-1.1.17
